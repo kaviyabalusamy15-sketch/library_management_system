@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Library Management API",
+    "_postman_id": "library-management-demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {"name":"Books - GET All","request":{"method":"GET","url":"http://127.0.0.1:8000/api/books/"}},
+    {"name":"Books - POST","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"title\":\"Python Basics\",\"author\":\"John Smith\",\"isbn\":\"ISBN001\",\"category\":\"Programming\",\"published_year\":2025,\"quantity\":5,\"available_quantity\":5}"},"url":"http://127.0.0.1:8000/api/books/"}},
+    {"name":"Members - GET All","request":{"method":"GET","url":"http://127.0.0.1:8000/api/members/"}},
+    {"name":"Members - POST","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"name\":\"Demo Student\",\"email\":\"student@example.com\",\"phone\":\"9876543210\"}"},"url":"http://127.0.0.1:8000/api/members/"}},
+    {"name":"Loans - GET All","request":{"method":"GET","url":"http://127.0.0.1:8000/api/loans/"}}
+  ]
+}

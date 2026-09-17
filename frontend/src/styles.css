@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #1f2937;
+}
+.app { max-width: 1200px; margin: auto; padding: 24px; }
+header {
+  background: #1f4b6e; color: white; padding: 24px; border-radius: 14px;
+}
+header h1 { margin: 0 0 8px; }
+header p { margin: 0; opacity: .9; }
+.tabs { display:flex; gap:8px; margin:18px 0; }
+.tabs button { border:0; background:white; padding:12px 22px; border-radius:8px; cursor:pointer; }
+.tabs button.active { background:#1f4b6e; color:white; }
+.card {
+  background:white; border-radius:14px; padding:20px; margin-bottom:18px;
+  box-shadow:0 2px 10px rgba(0,0,0,.07);
+}
+.card h2 { margin-top:0; }
+.form-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+input, select {
+  width:100%; padding:11px; border:1px solid #ccd3da; border-radius:7px; font-size:14px;
+}
+.form-actions { display:flex; gap:8px; align-items:center; }
+button {
+  border:0; padding:9px 13px; border-radius:7px; cursor:pointer; background:#e8edf2;
+}
+button.primary { background:#1f4b6e; color:white; }
+button.danger { background:#b42318; color:white; margin-left:6px; }
+.section-head { display:flex; justify-content:space-between; align-items:center; gap:15px; }
+.search { max-width:300px; }
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; margin-top:10px; }
+th, td { padding:11px; border-bottom:1px solid #e5e7eb; text-align:left; }
+th { background:#f8fafc; }
+.toast {
+  position:fixed; right:20px; top:20px; z-index:10; background:#111827;
+  color:white; padding:13px 18px; border-radius:8px; max-width:420px;
+}
+.issue-grid { display:grid; grid-template-columns:1fr 1fr auto; gap:10px; }
+.badge { padding:5px 9px; border-radius:20px; background:#fff1c2; }
+.badge.returned { background:#d1fae5; }
+@media (max-width:700px) {
+  .app { padding:12px; }
+  .form-grid, .issue-grid { grid-template-columns:1fr; }
+  .section-head { align-items:stretch; flex-direction:column; }
+  .search { max-width:none; }
+  header h1 { font-size:22px; }
+}
